@@ -1,9 +1,11 @@
-import java.util.Scanner
+import java.util.Scanner;
+
+
 public class Rift
 {
 	public static void main(String[]args)
 	{
-		int deathcount=0
+		int deathcount = 0;
 		
 		//context//
 		//user input//

@@ -29,14 +29,11 @@ echo 2. Exit through the door pointing towards the sun.
 echo.
 set /p input1=Enter: 
 
-if %input1% equ 1 goto dead1
+if %input1% equ 1 goto dead2
 if %input1% equ 2 goto stage1
-goto begin
 
-
-:dead1
+:dead2
 cls
-color 40
 echo You look toward the hills and see raging Indians charging towards your position.
 echo You fire and kill two Indians,
 echo but get shot through the heart by an arrow and die miserably.
@@ -48,10 +45,10 @@ goto begin
 cls
 echo There is a horse stable nearby,
 echo and you run towards it as you see a mob of angry Indians charging your way.
-echo There are two horses chillin’ under the shade.
+echo There are two horses chillin' under the shade.
 echo For some reason there is a keeper and asks your to pay $25 for a horse.
-echo You do not have $25…
-
+echo You do not have $25?
+goto begin
 
 
 

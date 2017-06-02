@@ -15,8 +15,9 @@ public class Begin
 		System.out.println("RESET!!!")
 		//call back Begin//
 	}
+	
 	else if (answer1.equals("2"))
 	{
-		
+		//goto Second stage//
 	}
 }

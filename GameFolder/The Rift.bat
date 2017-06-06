@@ -128,6 +128,7 @@ echo.
 pause & goto next5
 :next5 
 cls
+color 0f
 echo You awake as a medic injects epinephrine directly into your heart. There is rubble all around you. There are a few tents set up by command. 
 pause
 echo What do you do?

@@ -105,21 +105,55 @@ echo What do you do?
 echo 1 Scout
 echo 2 Assault
 echo 3 Vehicle Operator
-set /p num=choose 1~2
+set /p num=choose 1~3
 if %num%==1 goto one4
 if %num%==2 goto two4
-if %num%==2 goto two4
+if %num%==3 goto three4
 :one4
+color cf
 echo You are dropped from a plane and parachute behind enemy lines. You hear the roar of anti air guns shooting down planes around you. As you jump out of the plane, it explodes with the rest of your squadron inside. You say a quick prayer before you land on the ground behind several MG nests. You see the rest of the battalion landing in small boats on the beaches and pinned down by a line of Nazi soldiers. An airstrike explodes just in front of you destroying all the bunkers. You lose consciousness.
 
 echo.
 pause & goto next4
-:one4
+:two4
+color cf
 echo You jump into the boat with the rest of your fellow squad members. As you approach the quiet beach you have a terrible feeling about all this. All of the sudden there are lights flashing all over the beach and the deafening roars of artillery cannons. There is a serene beauty about the scene as the beach lights up in fire and explosions. You are pulled out by your squad leader and storm forwards. After 3 hours the beach has been taken with the help of the brave paratroopers behind enemy lands. You are struck in the head as you walk around looking for ammo. You pass out.
 echo.
 pause & goto next4
-:one4
+:three4
+color cf
 echo You pilot a small tank and just landed on the beach. You fire at the bunkers, but your shells do no damage. Suddenly your tank gets struck by an artillery strike and everything goes black.
 
 echo.
-pause & goto next4
+pause & goto next5
+:next5 
+cls
+echo You awake as a medic injects epinephrine directly into your heart. There is rubble all around you. There are a few tents set up by command. 
+pause
+echo What do you do?
+echo 1. Run away from the fight
+echo 2. You grab your rifle and shoot yourself to avoid all the violence
+echo 3. You look for your commanding officer.
+set /p num=choose 1~3
+if %num%==1 goto one5
+if %num%==2 goto two5
+if %num%==3 goto three5
+:one5
+color cf
+echo Your captain sees you run and tell you to stop, you keep running until you feel multiple shots go off and penetrate your lungs. Blood flows out of your mouth and chest. You die in disgrace.
+
+echo.
+pause & goto top
+:two5
+color cf
+echo DEAD!
+
+echo.
+pause & goto top
+:three5
+echo Nice!
+
+echo.
+pause & goto next6
+:next6
+

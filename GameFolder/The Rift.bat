@@ -157,4 +157,39 @@ echo Nice!
 echo.
 pause & goto next6
 :next6
+cls
+color 0f
+echo You are assigned to a scout a Nazi outpost and call in reinforcements if necessary. After about 30 minutes of the grueling mud you finally arrive at the outpost.
+pause
+echo What will you do?
+echo 1. You enter the bunker guns blazing and hope that there is nobody there.
+echo 2. You scout around the area to see if there are any soldiers around the camp.
+set /p num=choose 1~2
+if %num%==1 goto one6
+if %num%==2 goto two6
+
+:one6
+color 0f
+echo Out of nowhere you hear a voice speaking some gibberish, but before you turn around, you are struck in the head with a Luger P08.
+echo.
+pause & goto next7
+
+:two6
+color 0f
+echo Out of nowhere you hear a voice speaking some gibberish, but before you turn around, you are struck in the head with a Luger P08.
+echo.
+pause & goto next7
+
+:next7
+cls
+color 0f
+echo You awake in a holding cell. Your arms and feet are tied to a table and the only source of light is an antique light bulb hanging from the ceiling. You can hear screaming from the other rooms.
+pause
+echo 
+
+//this part in contruction//
+
+
+
+
 

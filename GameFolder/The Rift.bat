@@ -90,9 +90,9 @@ echo What do you do?
 echo 1 I have no idea what you are talking about!
 echo 2 Sure, I’ll join your cause!
 set /p num=choose 1~2
-if %num%==1 goto one4
-if %num%==2 goto two4
-:one4
+if %num%==1 goto one500
+if %num%==2 goto one500
+:one500
 echo The brotherhood here is fighting against them damn Nazis. I hate socialists! Let’s get you loaded up and overseas into Europe. Another man comes behind you and knocks you out.
 echo.
 pause & goto next4

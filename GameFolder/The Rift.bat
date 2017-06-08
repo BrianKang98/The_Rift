@@ -114,12 +114,12 @@ color cf
 echo You are dropped from a plane and parachute behind enemy lines. You hear the roar of anti air guns shooting down planes around you. As you jump out of the plane, it explodes with the rest of your squadron inside. You say a quick prayer before you land on the ground behind several MG nests. You see the rest of the battalion landing in small boats on the beaches and pinned down by a line of Nazi soldiers. An airstrike explodes just in front of you destroying all the bunkers. You lose consciousness.
 
 echo.
-pause & goto next4
+pause & goto next5
 :two4
 color cf
 echo You jump into the boat with the rest of your fellow squad members. As you approach the quiet beach you have a terrible feeling about all this. All of the sudden there are lights flashing all over the beach and the deafening roars of artillery cannons. There is a serene beauty about the scene as the beach lights up in fire and explosions. You are pulled out by your squad leader and storm forwards. After 3 hours the beach has been taken with the help of the brave paratroopers behind enemy lands. You are struck in the head as you walk around looking for ammo. You pass out.
 echo.
-pause & goto next4
+pause & goto next5
 :three4
 color cf
 echo You pilot a small tank and just landed on the beach. You fire at the bunkers, but your shells do no damage. Suddenly your tank gets struck by an artillery strike and everything goes black.
@@ -186,10 +186,124 @@ color 0f
 echo You awake in a holding cell. Your arms and feet are tied to a table and the only source of light is an antique light bulb hanging from the ceiling. You can hear screaming from the other rooms.
 pause
 echo 
+echo What will you do?
+echo 1.You try to escape the leather cuffs by force.
+echo 2.Try to sleep.
+echo 3.Start Yelling.
+set /p num=choose 1~3
+if %num%==1 goto one7
+if %num%==2 goto two7
+if %num%==3 goto three7
 
-//this part in contruction//
+:one7
+color cf
+echo You use all your strength, but nothing happens...
+pause 
+echo.
+pause & goto next7
 
+:two7
+color 0f
+echo After a quick moment, two armed soldier walk into the room with an apparatus which closely resembles an electrocution device. Another person- presumably a doctor, walks into the room with a sponge and wets your head. He puts the sponge into a bowl and places the device onto your head. The only thought in your mind is how they are doing all of this without talking or looking at each other. As the device switches on, you hear that same familiar noise again and bam! 
+pause 
+echo.
+pause & goto next8
 
+:three7
+color cf
+echo You use all your strength, but nothing happens...
+pause 
+echo.
+pause & goto next7
 
+:next8 
+cls
+color 0f
+echo You awake in a home strange, yet somehow familiar at the same time. You see a wedding ring on your finger, but do not question what has happened. You become accustomed to the new life, and find out that you won the war. One day, there is a package with a notepad delivered to your house. You open the notepad and there are two options……
+pause
+echo 
+echo What will you do?
+echo 1.Become a CompSci teacher…
+echo 2.Assassinate Hitler and end political correctness and all the strange things going on forever! 
+set /p num=choose 1~2
+if %num%==1 goto one8
+if %num%==2 goto two8
 
+:one8
+color cf
+echo You become a CompSci teacher, your name is Richard Robinette, and you teach at Torrey Pines High School! Good job, you are where you are now. :)
+pause 
+echo.
+pause & goto top
 
+:two8
+color 0f
+echo You are lauded as a here and the president gives you the medal of honor for saving America and the Republican values. You receive job offers from every firm you decide to apply to, but you turn them down because you can. You start a new tech firm and within 10 years, it completely changes how the world turns. You invent a new type of high fidelity audio device and can listen to your favorite music the way it is meant to be played. You become a billionaire, own a private island and have fun each and everyday of your life until the day you invent a pill that will allow you to live forever (which you decide is for better for no one to know about) at which point you become bored of life and decide to build a spaceship company and start your own corn farm and garden on the surface of mars. (You are forever remembered as a hero). GOOD JOB YOU HAVE REACHED THE GOOD ENDING! Just kidding, the game can’t be over yet, it’s too short!
+pause 
+echo.
+pause & goto next9
+
+:next9 
+cls
+color 0f
+echo Here’s what is actually going on is that you are sitting in the compsci room with a large coffee mug. You have just awoken from a brief nap. The bell rings and you see a horde of students coming in to work on their final projects. The passes extremely slowly and there are countless students asking for your help… What do you do now?
+pause
+echo 
+echo What will you do?
+echo 1.Tell the principal that you quit and go home.
+echo 2.Stay and do your job.
+set /p num=choose 1~2
+if %num%==1 goto one9
+if %num%==2 goto two9
+
+:one9
+color 0f
+echo Once you reach your car you find a lottery ticket attached to your car.
+pause 
+echo.
+pause & goto next10
+
+:one9
+color cf
+echo You stay and do your job, you are a compsci teacher for life.
+pause 
+echo.
+pause & goto top
+
+:next10 
+cls
+color 0f
+echo Once you reach your car you find a lottery ticket attached to your car.
+pause
+echo 
+echo What will you do?
+echo 1.Take it and head home.
+echo Toss it away.
+set /p num=choose 1~2
+if %num%==1 goto one10
+if %num%==2 goto two10
+
+:one10
+color 0f
+echo Nice.
+pause 
+echo.
+pause & goto next11
+
+:two10
+color cf
+echo You get run over by a car
+pause 
+echo.
+pause & goto top
+
+:next11 
+cls
+color 0f
+echo Congratulations you win the lottery in real life.
+echo 1.Replay?
+echo 2.IM DONE AND DO NOT WANT TO PLAY AGAIN!
+pause
+set /p num=choose 1~2
+if %num%==1 goto top
+if %num%==2 goto exit

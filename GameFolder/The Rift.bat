@@ -278,7 +278,7 @@ pause
 echo 
 echo What will you do?
 echo 1.Take it and head home.
-echo Toss it away.
+echo 2.Toss it away.
 set /p num=choose 1~2
 if %num%==1 goto one10
 if %num%==2 goto two10
@@ -306,4 +306,4 @@ echo 2.IM DONE AND DO NOT WANT TO PLAY AGAIN!
 pause
 set /p num=choose 1~2
 if %num%==1 goto top
-if %num%==2 goto exit
+if %num%==2 exit

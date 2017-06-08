@@ -185,7 +185,6 @@ cls
 color 0f
 echo You awake in a holding cell. Your arms and feet are tied to a table and the only source of light is an antique light bulb hanging from the ceiling. You can hear screaming from the other rooms.
 pause
-echo 
 echo What will you do?
 echo 1.You try to escape the leather cuffs by force.
 echo 2.Try to sleep.
@@ -221,7 +220,6 @@ cls
 color 0f
 echo You awake in a home strange, yet somehow familiar at the same time. You see a wedding ring on your finger, but do not question what has happened. You become accustomed to the new life, and find out that you won the war. One day, there is a package with a notepad delivered to your house. You open the notepad and there are two options……
 pause
-echo 
 echo What will you do?
 echo 1.Become a CompSci teacher…
 echo 2.Assassinate Hitler and end political correctness and all the strange things going on forever! 
@@ -248,7 +246,6 @@ cls
 color 0f
 echo Here’s what is actually going on is that you are sitting in the compsci room with a large coffee mug. You have just awoken from a brief nap. The bell rings and you see a horde of students coming in to work on their final projects. The passes extremely slowly and there are countless students asking for your help… What do you do now?
 pause
-echo 
 echo What will you do?
 echo 1.Tell the principal that you quit and go home.
 echo 2.Stay and do your job.
@@ -263,7 +260,7 @@ pause
 echo.
 pause & goto next10
 
-:one9
+:two9
 color cf
 echo You stay and do your job, you are a compsci teacher for life.
 pause 
@@ -275,7 +272,6 @@ cls
 color 0f
 echo Once you reach your car you find a lottery ticket attached to your car.
 pause
-echo 
 echo What will you do?
 echo 1.Take it and head home.
 echo 2.Toss it away.
